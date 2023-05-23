@@ -1,0 +1,20 @@
+package com.example.face_recognition.recognition
+
+import android.graphics.PointF
+import android.graphics.RectF
+import android.util.SizeF
+
+// 복습
+interface FaceAnalyzerListener {
+
+    fun detect()
+
+    fun stopDetect()
+
+    fun notDetect()
+
+    fun detectProgress(progress: Float, message:String)
+
+    fun faceSize(rectF: RectF, sizeF: SizeF, pointF: PointF)
+}
+//
